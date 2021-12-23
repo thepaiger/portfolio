@@ -1,5 +1,4 @@
 // Packages
-import { Switch, Route } from 'react-router-dom';
 
 // Screens/Layout
 import Layout from './layout/Layout';
@@ -21,11 +20,6 @@ function App() {
         <Work />
         <Contact />
         <Resume />
-        {/* <Switch>
-          <Route path="">
-            <Home />
-          </Route>
-        </Switch> */}
       </Layout>
     </div>
   );
