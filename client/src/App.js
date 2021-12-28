@@ -5,7 +5,6 @@ import Layout from './layout/Layout';
 import About from './screens/About/About';
 import Contact from './screens/Contact/Contact';
 import Home from './screens/Home/Home';
-import Resume from './screens/Resume/Resume';
 import Work from './screens/Work/Work';
 
 // CSS
@@ -19,7 +18,6 @@ function App() {
         <About />
         <Work />
         <Contact />
-        <Resume />
       </Layout>
     </div>
   );
