@@ -9,7 +9,7 @@ import fetch from "../../assets/images/fetch-ipad.png"
 
 export default function Projects() {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h2 className="section-heading">Projects I've Built</h2>
 
       <article className="project">
