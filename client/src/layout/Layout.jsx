@@ -19,8 +19,8 @@ export default function Layout({ children }) {
         {children}
       </main>
       <footer>
-        LinkedIn
-        Github
+        <a href="https://www.linkedin.com/in/paige-hoeppner/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/thepaiger" target="_blank">Github</a>
         Design & Built by Paige Hoeppner
       </footer>
     </div>

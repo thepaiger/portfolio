@@ -1,6 +1,3 @@
-// Packages
-import { Link } from 'react-router-dom';
-
 // CSS
 import './Work.css'
 
@@ -14,8 +11,8 @@ export default function Work() {
         <img src="" alt="Finstagram"></img>
         <p>Full stack Instagram clone, implementing a Ruby on Rails backend with RESTful JSON API and a React.js frontend, as well as full CRUD functionality.</p>
         <p>tech stack</p>
-        <Link to="">Github</Link>
-        <Link to="">Deployed Site</Link>
+        <a href="https://github.com/thepaiger/Finstagram" target="_blank">Github</a>
+        <a href="https://finstagram-ph.netlify.app/" target="_blank">Deployed Site</a>
       </article>
 
       <article className="project">
@@ -23,8 +20,8 @@ export default function Work() {
         <img src="" alt="Tether"></img>
         <p>Full stack electric supercar e-commerce web app created with a team of 5, using MongoDB and Express.js on the backend and React.js, JavaScript, and CSS on the frontend. Includes full CRUD.</p>
         <p>tech stack</p>
-        <Link to="">Github</Link>
-        <Link to="">Deployed Site</Link>
+        <a href="https://github.com/thepaiger/Tether" target="_blank">Github</a>
+        <a href="https://tether-supercars.netlify.app/" target="_blank">Deployed Site</a>
       </article>
 
       <article className="project">
@@ -32,8 +29,8 @@ export default function Work() {
         <img src="" alt="HEADBANGER"></img>
         <p>Music review site utilizing React.js, JavaScript, CSS, & Airtable. Integrates a clear component structure, GET/POST requests, and ReactPlayer.</p>
         <p>tech stack</p>
-        <Link to="">Github</Link>
-        <Link to="">Deployed Site</Link>
+        <a href="https://github.com/thepaiger/headbanger" target="_blank">Github</a>
+        <a href="https://headbanger.netlify.app/" target="_blank">Deployed Site</a>
       </article>
 
       <article className="project">
@@ -41,8 +38,8 @@ export default function Work() {
         <img src="" alt="Fetch"></img>
         <p>Responsive web app integrating the PetFinder API, in which the user can browse adoptable pets. Built with HTML, CSS, & JavaScript. </p>
         <p>tech stack</p>
-        <Link to="">Github</Link>
-        <Link to="">Deployed Site</Link>
+        <a href="https://github.com/thepaiger/Pet-Search-Project" target="_blank">Github</a>
+        <a href="https://thepaiger.github.io/Pet-Search-Project/" target="_blank">Deployed Site</a>
       </article>
     </section>
   )
