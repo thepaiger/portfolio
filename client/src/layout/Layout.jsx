@@ -15,7 +15,7 @@ export default function Layout({ children }) {
       <nav>
         <Link to="#home">Home</Link>
         About
-        Work
+        Projects
         Contact
         <a href={resumePdf} target="_blank">Resume</a>
       </nav>
