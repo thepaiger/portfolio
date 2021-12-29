@@ -52,7 +52,6 @@ export default function Layout({ children }) {
           </NavHashLink>
           <button>
             <a
-
               href={resumePdf}
               target="_blank"
               rel="noopener noreferrer"

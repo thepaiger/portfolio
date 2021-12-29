@@ -24,61 +24,69 @@ export default function About() {
         <p className="about-text">
           Hi there! My name is Paige, and I am a developer with a love for
           problem-solving, minute details, and working with a variety of
-          technologies. When faced with a complex problem, I strive to understand
-          the team's priorities, design a solution, then optimize workflows and
-          create clear documentation for processes. The opportunity to combine
-          engineering with my creative background is what excites me most, and
-          with my strong client-focused background, I am highly driven and thrive
-          under pressure.
+          technologies. When faced with a complex problem, I strive to
+          understand the team's priorities, design a solution, then optimize
+          workflows and create clear documentation for processes. The
+          opportunity to combine engineering with my creative background is what
+          excites me most, and with my strong client-focused background, I am
+          highly driven and thrive under pressure.
         </p>
         <section className="stack-list">
           <figure className="stack-item">
             <img className="stack-logo" src={html} alt="HTML logo" />
-            <figcaption>HTML</figcaption>
+            <figcaption className="stack-label">HTML</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={css} alt="CSS logo" />
-            <figcaption>CSS</figcaption>
+            <figcaption className="stack-label">CSS</figcaption>
           </figure>
           <figure className="stack-item">
-            <img className="stack-logo" src={javascript} alt="JavaScript logo" />
-            <figcaption>JavaScript</figcaption>
+            <img
+              className="stack-logo"
+              src={javascript}
+              alt="JavaScript logo"
+            />
+            <figcaption className="stack-label">JavaScript</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={node_js} alt="Node.js logo" />
-            <figcaption>Node.js</figcaption>
+            <figcaption className="stack-label">Node.js</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={express} alt="Express logo" />
-            <figcaption>Express</figcaption>
+            <figcaption className="stack-label">Express</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={react} alt="React logo" />
-            <figcaption>React</figcaption>
+            <figcaption className="stack-label">React</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={ruby} alt="Ruby logo" />
-            <figcaption>Ruby</figcaption>
+            <figcaption className="stack-label">Ruby</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={rails} alt="Rails logo" />
-            <figcaption>Rails</figcaption>
+            <figcaption className="stack-label">Rails</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={git} alt="Git logo" />
-            <figcaption>Git</figcaption>
+            <figcaption className="stack-label">Git</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={github} alt="Github logo" />
-            <figcaption>Github</figcaption>
+            <figcaption className="stack-label">Github</figcaption>
           </figure>
           <figure className="stack-item">
             <img className="stack-logo" src={mongodb} alt="MongoDB logo" />
-            <figcaption>MongoDB</figcaption>
+            <figcaption className="stack-label">MongoDB</figcaption>
           </figure>
           <figure className="stack-item">
-            <img className="stack-logo" src={postgresql} alt="PostgreSQL logo" />
-            <figcaption>PostgreSQL</figcaption>
+            <img
+              className="stack-logo"
+              src={postgresql}
+              alt="PostgreSQL logo"
+            />
+            <figcaption className="stack-label">PostgreSQL</figcaption>
           </figure>
         </section>
         <a href={resumePdf} target="_blank" rel="noopener noreferrer">
