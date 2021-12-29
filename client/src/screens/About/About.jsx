@@ -3,18 +3,9 @@ import "./About.css";
 
 // Assets
 import resumePdf from "../../assets/resume/paige-hoeppner-resume.pdf";
-import html from "../../assets/graphics/html.svg";
-import css from "../../assets/graphics/css.svg";
-import javascript from "../../assets/graphics/js.png";
-import node_js from "../../assets/graphics/node_js.svg";
-import express from "../../assets/graphics/express.svg";
-import react from "../../assets/graphics/react.svg";
-import ruby from "../../assets/graphics/ruby.png";
-import rails from "../../assets/graphics/rails.svg";
-import git from "../../assets/graphics/git.png";
-import github from "../../assets/graphics/github.svg";
-import mongodb from "../../assets/graphics/mongodb.png";
-import postgresql from "../../assets/graphics/postgresql.svg";
+
+// Services
+import { stacks } from "../../services/stacks"
 
 export default function About() {
   return (
@@ -32,62 +23,12 @@ export default function About() {
           highly driven and thrive under pressure.
         </p>
         <section className="stack-list">
-          <figure className="stack-item">
-            <img className="stack-logo" src={html} alt="HTML logo" />
-            <figcaption className="stack-label">HTML</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={css} alt="CSS logo" />
-            <figcaption className="stack-label">CSS</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img
-              className="stack-logo"
-              src={javascript}
-              alt="JavaScript logo"
-            />
-            <figcaption className="stack-label">JavaScript</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={node_js} alt="Node.js logo" />
-            <figcaption className="stack-label">Node.js</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={express} alt="Express logo" />
-            <figcaption className="stack-label">Express</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={react} alt="React logo" />
-            <figcaption className="stack-label">React</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={ruby} alt="Ruby logo" />
-            <figcaption className="stack-label">Ruby</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={rails} alt="Rails logo" />
-            <figcaption className="stack-label">Rails</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={git} alt="Git logo" />
-            <figcaption className="stack-label">Git</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={github} alt="Github logo" />
-            <figcaption className="stack-label">Github</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img className="stack-logo" src={mongodb} alt="MongoDB logo" />
-            <figcaption className="stack-label">MongoDB</figcaption>
-          </figure>
-          <figure className="stack-item">
-            <img
-              className="stack-logo"
-              src={postgresql}
-              alt="PostgreSQL logo"
-            />
-            <figcaption className="stack-label">PostgreSQL</figcaption>
-          </figure>
+          {stacks.map((stack) => (
+            <figure className="stack-item" key={stack.name}>
+              {stack.svg}
+              <figcaption className="stack-label">{stack.name}</figcaption>
+            </figure>
+          ))}
         </section>
         <a href={resumePdf} target="_blank" rel="noopener noreferrer">
           <button>Resume</button>
