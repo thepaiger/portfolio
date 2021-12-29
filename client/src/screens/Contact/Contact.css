@@ -7,3 +7,46 @@
   height: 85vh;
   border: solid 1px blueviolet;
 }
+
+.contact-container {
+  width: 50%;
+  height: fit-content;
+  border: solid 1px blueviolet;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.contact-input {
+  background-color: #d0cdd7;
+  color: #0b3948;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  border: none;
+  margin: 10px 0 0 0;
+  padding: 7px;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-btn {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  border: none;
+  margin: 10px 0 0 0;
+  padding: 7px;
+}
