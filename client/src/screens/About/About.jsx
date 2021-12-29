@@ -1,16 +1,90 @@
 // CSS
-import './About.css'
+import "./About.css";
 
 // Assets
-import resumePdf from '../../assets/resume/paige-hoeppner-resume.pdf'
+import resumePdf from "../../assets/resume/paige-hoeppner-resume.pdf";
+import html from "../../assets/graphics/html.svg";
+import css from "../../assets/graphics/css.svg";
+// import javascript from "../../assets/graphics/js.svg";
+import node_js from "../../assets/graphics/node_js.svg";
+// import express from "../../assets/graphics/express.svg";
+import react from "../../assets/graphics/react.svg";
+import ruby from "../../assets/graphics/ruby.png";
+// import rails from "../../assets/graphics/rails.svg";
+// import git from "../../assets/graphics/git.svg";
+import github from "../../assets/graphics/github.svg";
+import mongodb from "../../assets/graphics/mongodb.png";
+import postgresql from "../../assets/graphics/postgresql.svg";
 
 export default function About() {
   return (
     <section className="about" id="about">
-      <h2 className="section-heading">About Me</h2>
-      <p>Hi there! My name is Paige, and I am a developer with a love for problem-solving, minute details, and working with a variety of technologies. When faced with a complex problem, I strive to understand the team's priorities, design a solution, then optimize workflows and create clear documentation for processes. The opportunity to combine engineering with my creative background is what excites me most, and with my strong client-focused background, I am highly driven and thrive under pressure.</p>
-      <p>LIST TECH STACKS</p>
-      <a href={resumePdf} target="_blank"><button>Resume</button></a>
+      <div className="about-container">
+        <h2 className="section-heading">About Me</h2>
+        <p className="about-text">
+          Hi there! My name is Paige, and I am a developer with a love for
+          problem-solving, minute details, and working with a variety of
+          technologies. When faced with a complex problem, I strive to understand
+          the team's priorities, design a solution, then optimize workflows and
+          create clear documentation for processes. The opportunity to combine
+          engineering with my creative background is what excites me most, and
+          with my strong client-focused background, I am highly driven and thrive
+          under pressure.
+        </p>
+        <section className="stack-list">
+          <figure>
+            <img src={html} alt="HTML logo" />
+            <figcaption>HTML</figcaption>
+          </figure>
+          <figure>
+            <img src={css} alt="CSS logo" />
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure>
+            {/* <img src={javascript} alt="JavaScript logo" /> */}
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure>
+            <img src={node_js} alt="Node.js logo" />
+            <figcaption>Node.js</figcaption>
+          </figure>
+          <figure>
+            {/* <img src={express} alt="Express logo" /> */}
+            <figcaption>Express</figcaption>
+          </figure>
+          <figure>
+            <img src={react} alt="React logo" />
+            <figcaption>React</figcaption>
+          </figure>
+          <figure>
+            <img src={ruby} alt="Ruby logo" />
+            <figcaption>Ruby</figcaption>
+          </figure>
+          <figure>
+            {/* <img src={rails} alt="Rails logo" /> */}
+            <figcaption>Rails</figcaption>
+          </figure>
+          <figure>
+            {/* <img src={git} alt="Git logo" /> */}
+            <figcaption>Git</figcaption>
+          </figure>
+          <figure>
+            <img src={github} alt="Github logo" />
+            <figcaption>Github</figcaption>
+          </figure>
+          <figure>
+            <img src={mongodb} alt="MongoDB logo" />
+            <figcaption>MongoDB</figcaption>
+          </figure>
+          <figure>
+            <img src={postgresql} alt="PostgreSQL logo" />
+            <figcaption>PostgreSQL</figcaption>
+          </figure>
+        </section>
+        <a href={resumePdf} target="_blank" rel="noopener noreferrer">
+          <button>Resume</button>
+        </a>
+      </div>
     </section>
-  )
+  );
 }

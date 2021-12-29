@@ -18,7 +18,7 @@ export default function Layout({ children }) {
           smooth
           to="#top"
           activeClassName="selected"
-          activeStyle={{ color: "red" }}
+        // activeStyle={{ color: "red" }}
         >
           Home
         </NavHashLink>
@@ -28,7 +28,7 @@ export default function Layout({ children }) {
             smooth
             to="#about"
             activeClassName="selected"
-            activeStyle={{ color: "red" }}
+          // activeStyle={{ color: "red" }}
           >
             About
           </NavHashLink>
@@ -37,7 +37,7 @@ export default function Layout({ children }) {
             smooth
             to="#projects"
             activeClassName="selected"
-            activeStyle={{ color: "red" }}
+          // activeStyle={{ color: "red" }}
           >
             Projects
           </NavHashLink>
@@ -46,25 +46,42 @@ export default function Layout({ children }) {
             smooth
             to="#contact"
             activeClassName="selected"
-            activeStyle={{ color: "red" }}
+          // activeStyle={{ color: "red" }}
           >
             Contact
           </NavHashLink>
           <button>
-            <a className="nav-link" href={resumePdf} target="_blank">
+            <a
+
+              href={resumePdf}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
             </a>
           </button>
         </div>
+        <div className="logo-links">
+          <a
+            className="github-logo"
+            href="https://www.linkedin.com/in/paige-hoeppner/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubLogo} alt="Github Logo" />
+          </a>
+          <a
+            className="linkedin-logo"
+            href="https://github.com/thepaiger"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedinLogo} alt="LinkedIn Logo" />
+          </a>
+        </div>
       </nav>
       <main>{children}</main>
       <footer>
-        <a href="https://www.linkedin.com/in/paige-hoeppner/" target="_blank">
-          <img src={githubLogo} alt="Github Logo" />
-        </a>
-        <a href="https://github.com/thepaiger" target="_blank">
-          <img src={linkedinLogo} alt="LinkedIn Logo" />
-        </a>
         Designed & Built by Paige Hoeppner | 2021
       </footer>
     </div>
