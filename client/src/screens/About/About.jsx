@@ -5,13 +5,13 @@ import "./About.css";
 import resumePdf from "../../assets/resume/paige-hoeppner-resume.pdf";
 import html from "../../assets/graphics/html.svg";
 import css from "../../assets/graphics/css.svg";
-// import javascript from "../../assets/graphics/js.svg";
+import javascript from "../../assets/graphics/js.png";
 import node_js from "../../assets/graphics/node_js.svg";
-// import express from "../../assets/graphics/express.svg";
+import express from "../../assets/graphics/express.svg";
 import react from "../../assets/graphics/react.svg";
 import ruby from "../../assets/graphics/ruby.png";
-// import rails from "../../assets/graphics/rails.svg";
-// import git from "../../assets/graphics/git.svg";
+import rails from "../../assets/graphics/rails.svg";
+import git from "../../assets/graphics/git.png";
 import github from "../../assets/graphics/github.svg";
 import mongodb from "../../assets/graphics/mongodb.png";
 import postgresql from "../../assets/graphics/postgresql.svg";
@@ -32,52 +32,52 @@ export default function About() {
           under pressure.
         </p>
         <section className="stack-list">
-          <figure>
-            <img src={html} alt="HTML logo" />
+          <figure className="stack-item">
+            <img className="stack-logo" src={html} alt="HTML logo" />
             <figcaption>HTML</figcaption>
           </figure>
-          <figure>
-            <img src={css} alt="CSS logo" />
+          <figure className="stack-item">
+            <img className="stack-logo" src={css} alt="CSS logo" />
             <figcaption>CSS</figcaption>
           </figure>
-          <figure>
-            {/* <img src={javascript} alt="JavaScript logo" /> */}
+          <figure className="stack-item">
+            <img className="stack-logo" src={javascript} alt="JavaScript logo" />
             <figcaption>JavaScript</figcaption>
           </figure>
-          <figure>
-            <img src={node_js} alt="Node.js logo" />
+          <figure className="stack-item">
+            <img className="stack-logo" src={node_js} alt="Node.js logo" />
             <figcaption>Node.js</figcaption>
           </figure>
-          <figure>
-            {/* <img src={express} alt="Express logo" /> */}
+          <figure className="stack-item">
+            <img className="stack-logo" src={express} alt="Express logo" />
             <figcaption>Express</figcaption>
           </figure>
-          <figure>
-            <img src={react} alt="React logo" />
+          <figure className="stack-item">
+            <img className="stack-logo" src={react} alt="React logo" />
             <figcaption>React</figcaption>
           </figure>
-          <figure>
-            <img src={ruby} alt="Ruby logo" />
+          <figure className="stack-item">
+            <img className="stack-logo" src={ruby} alt="Ruby logo" />
             <figcaption>Ruby</figcaption>
           </figure>
-          <figure>
-            {/* <img src={rails} alt="Rails logo" /> */}
+          <figure className="stack-item">
+            <img className="stack-logo" src={rails} alt="Rails logo" />
             <figcaption>Rails</figcaption>
           </figure>
-          <figure>
-            {/* <img src={git} alt="Git logo" /> */}
+          <figure className="stack-item">
+            <img className="stack-logo" src={git} alt="Git logo" />
             <figcaption>Git</figcaption>
           </figure>
-          <figure>
-            <img src={github} alt="Github logo" />
+          <figure className="stack-item">
+            <img className="stack-logo" src={github} alt="Github logo" />
             <figcaption>Github</figcaption>
           </figure>
-          <figure>
-            <img src={mongodb} alt="MongoDB logo" />
+          <figure className="stack-item">
+            <img className="stack-logo" src={mongodb} alt="MongoDB logo" />
             <figcaption>MongoDB</figcaption>
           </figure>
-          <figure>
-            <img src={postgresql} alt="PostgreSQL logo" />
+          <figure className="stack-item">
+            <img className="stack-logo" src={postgresql} alt="PostgreSQL logo" />
             <figcaption>PostgreSQL</figcaption>
           </figure>
         </section>

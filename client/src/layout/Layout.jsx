@@ -64,7 +64,7 @@ export default function Layout({ children }) {
         <div className="logo-links">
           <a
             className="github-logo"
-            href="https://www.linkedin.com/in/paige-hoeppner/"
+            href="https://github.com/thepaiger"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -72,7 +72,7 @@ export default function Layout({ children }) {
           </a>
           <a
             className="linkedin-logo"
-            href="https://github.com/thepaiger"
+            href="https://www.linkedin.com/in/paige-hoeppner/"
             target="_blank"
             rel="noopener noreferrer"
           >
