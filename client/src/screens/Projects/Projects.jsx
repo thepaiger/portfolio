@@ -25,21 +25,23 @@ export default function Projects() {
               RESTful JSON API and a React.js frontend, as well as full CRUD
               functionality.
             </p>
-            <p>tech stack</p>
-            <a
-              href="https://github.com/thepaiger/Finstagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github Repo
-            </a>
-            <a
-              href="https://finstagram-ph.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Site
-            </a>
+            <p className="project-stack">tech stack</p>
+            <div className="project-links">
+              <a
+                href="https://finstagram-ph.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/thepaiger/Finstagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github Repo
+              </a>
+            </div>
           </div>
         </article>
 
@@ -53,21 +55,23 @@ export default function Projects() {
               5, using MongoDB and Express.js on the backend and React.js,
               JavaScript, and CSS on the frontend. Includes full CRUD.
             </p>
-            <p>tech stack</p>
-            <a
-              href="https://github.com/thepaiger/Tether"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github Repo
-            </a>
-            <a
-              href="https://tether-supercars.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Site
-            </a>
+            <p className="project-stack">tech stack</p>
+            <div className="project-links">
+              <a
+                href="https://tether-supercars.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/thepaiger/Tether"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github Repo
+              </a>
+            </div>
           </div>
         </article>
 
@@ -81,21 +85,23 @@ export default function Projects() {
               Integrates a clear component structure, GET/POST requests, and
               ReactPlayer.
             </p>
-            <p>tech stack</p>
-            <a
-              href="https://github.com/thepaiger/headbanger"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github Repo
-            </a>
-            <a
-              href="https://headbanger.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Site
-            </a>
+            <p className="project-stack">tech stack</p>
+            <div className="project-links">
+              <a
+                href="https://headbanger.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/thepaiger/headbanger"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github Repo
+              </a>
+            </div>
           </div>
         </article>
 
@@ -108,21 +114,23 @@ export default function Projects() {
               Responsive web app integrating the PetFinder API, in which the user
               can browse adoptable pets. Built with HTML, CSS, & JavaScript.
             </p>
-            <p>tech stack</p>
-            <a
-              href="https://github.com/thepaiger/Pet-Search-Project"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github Repo
-            </a>
-            <a
-              href="https://thepaiger.github.io/Pet-Search-Project/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Site
-            </a>
+            <p className="project-stack">tech stack</p>
+            <div className="project-links">
+              <a
+                href="https://thepaiger.github.io/Pet-Search-Project/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </a>
+              <a
+                href="https://github.com/thepaiger/Pet-Search-Project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github Repo
+              </a>
+            </div>
           </div>
         </article>
       </div>
