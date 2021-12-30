@@ -10,7 +10,9 @@ import fetch from "../../assets/images/fetch-ipad.png";
 export default function Projects() {
   return (
     <section className="projects" id="projects">
-      <h2 className="section-heading">Projects I've Built</h2>
+      <div className="border-corner-heading">
+        <h2 className="section-heading">Projects I've Built</h2>
+      </div>
 
       <div className="projects-container">
         <article className="project">

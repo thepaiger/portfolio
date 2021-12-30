@@ -20,3 +20,61 @@ h6,
 p {
   margin: 0;
 }
+
+section {
+  padding: 5vh 0;
+}
+
+section:first-of-type {
+  padding: 0;
+}
+
+/* .section-heading {
+  font-size: 54px;
+  padding: 0 0 5vh 0;
+} */
+
+/* test */
+.border-corner-heading {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin: 0 0 5vh 0;
+  padding: 15px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.border-corner-heading::before,
+.border-corner-heading::after {
+  content: "";
+  position: absolute;
+  background: #0b3948;
+}
+
+.border-corner-heading::before {
+  width: calc(100% - 40px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.border-corner-heading::after {
+  height: calc(100% - 40px);
+  width: calc(100% + 2px);
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.section-heading {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  font-size: 54px;
+}

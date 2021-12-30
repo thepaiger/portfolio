@@ -11,18 +11,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 50%;
   height: 100%;
-}
-
-.section-heading {
-  font-size: 54px;
-  padding: 0 0 5vh 0;
 }
 
 .about-text {
   font-size: 18px;
   line-height: 1.5;
+  margin: 0 0 5vh 0;
 }
 
 .stack-list {
@@ -30,6 +26,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 0 0 5vh 0;
 }
 
 .stack-item {
@@ -54,4 +51,21 @@
   color: #2f4550;
   font-size: 14px;
   font-weight: 600;
+}
+
+.resume-btn-about {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
+  font-size: 20px;
+  background-color: #0b3948;
+  color: #d0cdd7;
+  border: solid 2px #d0cdd7;
+  margin: 0;
+  padding: 5px 15px;
+}
+
+.resume-btn-about:hover {
+  color: #f7df1e;
+  border: solid 2px #f7df1e;
+  transition: 0.3s ease-out all;
 }

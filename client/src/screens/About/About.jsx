@@ -11,7 +11,9 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div className="about-container">
-        <h2 className="section-heading">About Me</h2>
+        <div className="border-corner-heading">
+          <h2 className="section-heading">About Me</h2>
+        </div>
         <p className="about-text">
           Hi there! My name is Paige, and I am a developer with a love for
           problem-solving, minute details, and working with a variety of
@@ -31,7 +33,7 @@ export default function About() {
           ))}
         </section>
         <a href={resumePdf} target="_blank" rel="noopener noreferrer">
-          <button className="resume-btn">Resume</button>
+          <button className="resume-btn-about">Resume</button>
         </a>
       </div>
     </section>

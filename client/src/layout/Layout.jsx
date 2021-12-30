@@ -26,16 +26,6 @@ export default function Layout({ children }) {
             Home
           </NavHashLink>
         </div>
-
-        {/* <NavHashLink
-          className="home-link"
-          smooth
-          to="#top"
-          activeClassName="selected"
-        // activeStyle={{ color: "red" }}
-        >
-          Home
-        </NavHashLink> */}
         <div className="section-links">
           <NavHashLink
             className="nav-link"
@@ -87,10 +77,12 @@ export default function Layout({ children }) {
           </a>
         </div>
       </nav>
-      <main>{children}</main>
-      <footer>
-        Designed & Built by Paige Hoeppner | 2021
-      </footer>
+      <main>
+        {children}
+        <footer>
+          Designed & Built by Paige Hoeppner | 2021
+        </footer>
+      </main>
     </div>
   );
 }

@@ -12,39 +12,22 @@
   height: fit-content;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.hidden {
-  display: none;
-}
-
-.contact-input {
-  background-color: #d0cdd7;
-  color: #0b3948;
-  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  box-sizing: border-box;
-  border: none;
-  margin: 10px 0 0 0;
-  padding: 7px;
-}
-
-textarea {
-  resize: none;
+.contact-blurb {
+  margin: 0 0 5vh 0;
 }
 
 .contact-btn {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  box-sizing: border-box;
-  border: none;
-  margin: 10px 0 0 0;
-  padding: 7px;
+  font-size: 20px;
+  background-color: #0b3948;
+  color: #d0cdd7;
+  border: solid 2px #d0cdd7;
+  padding: 5px 15px;
+}
+
+.contact-btn:hover {
+  color: #f7df1e;
+  border: solid 2px #f7df1e;
+  transition: 0.3s ease-out all;
 }
