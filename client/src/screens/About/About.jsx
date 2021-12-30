@@ -31,7 +31,7 @@ export default function About() {
           ))}
         </section>
         <a href={resumePdf} target="_blank" rel="noopener noreferrer">
-          <button>Resume</button>
+          <button className="resume-btn">Resume</button>
         </a>
       </div>
     </section>

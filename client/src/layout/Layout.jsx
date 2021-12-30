@@ -5,15 +5,29 @@ import { NavHashLink } from "react-router-hash-link";
 import "./Layout.css";
 
 // Assets
-import githubLogo from "../assets/graphics/github.svg";
-import linkedinLogo from "../assets/graphics/linkedin.svg";
 import resumePdf from "../assets/resume/paige-hoeppner-resume.pdf";
+
+// Services
+import { logos } from "../services/logos"
+
 
 export default function Layout({ children }) {
   return (
     <div className="layout">
       <nav>
-        <NavHashLink
+        <div className="border-corner">
+          <NavHashLink
+            className="home-link"
+            smooth
+            to="#top"
+            activeClassName="selected"
+          // activeStyle={{ color: "red" }}
+          >
+            Home
+          </NavHashLink>
+        </div>
+
+        {/* <NavHashLink
           className="home-link"
           smooth
           to="#top"
@@ -21,7 +35,7 @@ export default function Layout({ children }) {
         // activeStyle={{ color: "red" }}
         >
           Home
-        </NavHashLink>
+        </NavHashLink> */}
         <div className="section-links">
           <NavHashLink
             className="nav-link"
@@ -50,15 +64,9 @@ export default function Layout({ children }) {
           >
             Contact
           </NavHashLink>
-          <button>
-            <a
-              href={resumePdf}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-          </button>
+          <a href={resumePdf} target="_blank" rel="noopener noreferrer">
+            <button className="resume-btn-nav">Resume</button>
+          </a>
         </div>
         <div className="logo-links">
           <a
@@ -67,7 +75,7 @@ export default function Layout({ children }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={githubLogo} alt="Github Logo" />
+            {logos[0].svg}
           </a>
           <a
             className="linkedin-logo"
@@ -75,7 +83,7 @@ export default function Layout({ children }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={linkedinLogo} alt="LinkedIn Logo" />
+            {logos[1].svg}
           </a>
         </div>
       </nav>

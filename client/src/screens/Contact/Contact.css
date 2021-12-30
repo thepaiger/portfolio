@@ -5,13 +5,11 @@
   align-items: center;
   width: 100%;
   height: fit-content;
-  border: solid 1px blueviolet;
 }
 
 .contact-container {
   width: 50%;
   height: fit-content;
-  border: solid 1px blueviolet;
 }
 
 .contact-form {

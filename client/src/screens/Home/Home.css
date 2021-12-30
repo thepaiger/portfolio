@@ -5,7 +5,7 @@
   width: 100%;
   height: 85vh;
   min-height: 85vh;
-  border: solid 1px blueviolet;
+  /* background-image: url("../../assets/images/ilya-mirnyy-background.jpg"); */
 }
 
 .intro-container {
@@ -15,7 +15,6 @@
   align-items: flex-end;
   width: 50%;
   height: 100%;
-  border: solid 1px blueviolet;
   text-align: end;
 }
 
