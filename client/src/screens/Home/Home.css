@@ -10,12 +10,21 @@
 
 .intro-container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.intro-text {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   width: 50%;
   height: 100%;
   text-align: end;
+  margin: 0 50px 0 0;
 }
 
 .intro-heading {
@@ -25,9 +34,29 @@
   margin: 0 0 2.5vh 0;
   font-size: 64px;
   font-weight: 500;
+  /* color: #a4c2cc; */
+  /* color: #64ffda; */
+  /* color: #f9ed96; */
+  /* color: #dfb189; */
 }
 
 .intro-subheading {
   font-size: 30px;
   font-weight: 400;
+  /* color: #f7df1e; */
+}
+
+.intro-pic {
+  width: 330px;
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.intro-pic > img {
+  display: inline;
+  margin: -8% 0 0 0;
+  height: auto;
+  width: 100%;
 }

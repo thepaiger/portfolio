@@ -23,10 +23,18 @@ p {
 
 section {
   padding: 5vh 0;
+  background-color: #0b3948;
+  margin: 20px 0;
+  box-shadow: 0px 5px 5px #0b394880, 0px -5px 5px #0b394880;
 }
 
 section:first-of-type {
   padding: 0;
+  margin: 0 0 20px 0;
+}
+
+section:last-of-type {
+  margin: 20px 0 0 0;
 }
 
 /* .section-heading {
@@ -77,4 +85,20 @@ section:first-of-type {
   padding: 0;
   z-index: 5;
   font-size: 54px;
+  /* color: #b8dbd9; */
 }
+
+/* .outer-card {
+  background: linear-gradient(#0b394822, #0b394822),
+    url("https://images.unsplash.com/photo-1635204487816-e691eb017c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-color: #0b394833;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.card {
+  background-color: #052430f1;
+  border-radius: 5px;
+  padding: 30px;
+} */
