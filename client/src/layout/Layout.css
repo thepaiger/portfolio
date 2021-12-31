@@ -2,7 +2,7 @@
 https://codepen.io/heyvian/pen/xEovGd?editors=1100
  */
 
-nav {
+.nav-desktop {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,6 +15,10 @@ nav {
   /* background-color: rgba(0, 0, 0, 0.338); */
   /* background-color: #052430; */
   background-color: #061f27;
+}
+
+.nav-mobile {
+  display: none;
 }
 
 .section-links {
@@ -134,4 +138,56 @@ main {
   width: 87%;
   padding: 50px;
   box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  /* .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #061f27;
+    overflow-x: hidden;
+    padding: 15px 0 0 0;
+    transition: 0.5s;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f7df1e;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin: 0 0 0 50px;
+  } */
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0;
+  }
 }

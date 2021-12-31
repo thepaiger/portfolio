@@ -115,3 +115,36 @@ section:last-of-type {
   border-radius: 5px;
   padding: 30px;
 } */
+
+@media (max-width: 480px) {
+  section {
+    padding: 2.5vh 0;
+    /* margin: 20px 0; */
+    margin: 0;
+    box-shadow: none;
+    background: none;
+  }
+
+  section:first-of-type {
+    padding: 0;
+    /* margin: 0 0 20px 0; */
+    margin: 0;
+  }
+
+  section:last-of-type {
+    /* margin: 20px 0 0 0; */
+    margin: 0;
+  }
+
+  main {
+    background: radial-gradient(ellipse, #0b3948, #061f27);
+  }
+
+  .border-corner-heading {
+    /* border: none; */
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+}

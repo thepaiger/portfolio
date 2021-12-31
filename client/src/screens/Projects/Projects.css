@@ -119,3 +119,14 @@
   /* background-color: #f7df1e; */
   transition: 0.3s ease-out all;
 }
+
+@media (max-width: 480px) {
+  .projects-container {
+    width: 80%;
+  }
+
+  .project {
+    width: 100%;
+    margin: 20px;
+  }
+}

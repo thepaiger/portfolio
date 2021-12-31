@@ -14,6 +14,8 @@
 
 .contact-blurb {
   margin: 0 0 5vh 0;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .contact-btn {
@@ -39,4 +41,10 @@ footer {
   /* padding: 0 0; */
   margin: 40px 0 0 0;
   /* background-color: #0b3948; */
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    width: 75%;
+  }
 }

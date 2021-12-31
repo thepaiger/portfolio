@@ -8,13 +8,55 @@ import "./Layout.css";
 import resumePdf from "../assets/resume/paige-hoeppner-resume.pdf";
 
 // Services
-import { logos } from "../services/logos"
-
+import { logos } from "../services/logos";
 
 export default function Layout({ children }) {
+
+
   return (
     <div className="layout">
-      <nav>
+      <nav className="nav-mobile">
+        {/* <div className="sidenav">
+          <a
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeNav()"
+          >
+            &times;
+          </a>
+          <NavHashLink
+            className="home-link"
+            smooth
+            to="#top"
+          >
+            Home
+          </NavHashLink>
+          <NavHashLink
+            className="nav-link"
+            smooth
+            to="#about"
+          >
+            About
+          </NavHashLink>
+          <NavHashLink
+            className="nav-link"
+            smooth
+            to="#projects"
+          >
+            Projects
+          </NavHashLink>
+          <NavHashLink
+            className="nav-link"
+            smooth
+            to="#contact"
+          >
+            Contact
+          </NavHashLink>
+        </div>
+
+        <div onClick={() => ()}>{logos[2].svg}</div> */}
+      </nav>
+      <nav className="nav-desktop">
         <div className="border-corner">
           <NavHashLink
             className="home-link"
@@ -77,9 +119,7 @@ export default function Layout({ children }) {
           </a>
         </div>
       </nav>
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
     </div>
   );
 }
