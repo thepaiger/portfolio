@@ -79,9 +79,6 @@ export default function Layout({ children }) {
       </nav>
       <main>
         {children}
-        <footer>
-          Designed & Built by Paige Hoeppner | 2021
-        </footer>
       </main>
     </div>
   );
