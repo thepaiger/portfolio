@@ -67,6 +67,10 @@
     height: 100vh;
   }
 
+  .intro-container {
+    flex-direction: column-reverse;
+  }
+
   .intro-pic {
     width: 200px;
     height: 200px;
