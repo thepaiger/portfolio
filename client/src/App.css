@@ -23,6 +23,8 @@ p {
 
 section {
   padding: 5vh 0;
+  /* background-color: #d0cdd7; */
+  /* color: #0b3948; */
   background-color: #0b3948;
   /* background: radial-gradient(ellipse, #0b3948, #061f27); */
   /* margin: 20px 0; */
@@ -35,6 +37,8 @@ section {
 
 section:first-of-type {
   padding: 0;
+  /* background-color: #0b3948; */
+  /* color: #d0cdd7; */
   /* margin: 0 0 20px 0; */
   /* background: radial-gradient(ellipse, #0b3948, #061f27); */
 }
@@ -148,4 +152,10 @@ section:last-of-type {
   .section-heading {
     font-size: 24px;
   }
+}
+
+.border-line {
+  border-bottom: solid 2px #d0cdd7;
+  width: 70vw;
+  margin: 0 0 7vh 0;
 }

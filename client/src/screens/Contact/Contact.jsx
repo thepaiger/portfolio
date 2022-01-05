@@ -4,6 +4,7 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <section className="contact" id="contact">
+      <div className="border-line"></div>
       {/* <div className="section-heading-container"> */}
       <div className="border-corner-heading">
         <h2 className="section-heading">Get In Touch</h2>

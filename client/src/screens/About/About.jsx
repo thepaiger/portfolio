@@ -10,6 +10,7 @@ import { stacks } from "../../services/stacks";
 export default function About() {
   return (
     <section className="about" id="about">
+      <div className="border-line"></div>
       <div className="about-container">
         {/* <div className="section-heading-container"> */}
         <div className="border-corner-heading">
