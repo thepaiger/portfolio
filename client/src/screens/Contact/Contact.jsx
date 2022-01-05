@@ -4,11 +4,11 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <section className="contact" id="contact">
-      <div className="section-heading-container">
-        <div className="border-corner-heading">
-          <h2 className="section-heading">Get In Touch</h2>
-        </div>
+      {/* <div className="section-heading-container"> */}
+      <div className="border-corner-heading">
+        <h2 className="section-heading">Get In Touch</h2>
       </div>
+      {/* </div> */}
       <div className="contact-container">
         <p className="contact-blurb">
           I am currently seeking new opportunities! Please reach out if you

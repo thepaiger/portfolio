@@ -11,11 +11,11 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div className="about-container">
-        <div className="section-heading-container">
-          <div className="border-corner-heading">
-            <h2 className="section-heading">About Me</h2>
-          </div>
+        {/* <div className="section-heading-container"> */}
+        <div className="border-corner-heading">
+          <h2 className="section-heading">About Me</h2>
         </div>
+        {/* </div> */}
 
         <p className="about-text">
           Hi there! My name is Paige, and I am a developer with a love for
