@@ -85,4 +85,14 @@
     padding: 5px;
     margin: 10px;
   }
+
+  .stack-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 980px) {
+  .about-container {
+    width: 65%;
+  }
 }

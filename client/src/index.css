@@ -1,11 +1,11 @@
+/* Raleway font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ==========GLOBAL STYLINGS========== */
 
 body {
   margin: 0;
   background-color: #0b3948;
-  /* background: linear-gradient(#0b394822, #0b394822),
-    url("https://images.unsplash.com/photo-1635204487816-e691eb017c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */
-  /* background: url("https://images.unsplash.com/photo-1635204487816-e691eb017c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */
   color: #d0cdd7;
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
@@ -18,3 +18,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* background: linear-gradient(#0b394822, #0b394822),
+  url("https://images.unsplash.com/photo-1635204487816-e691eb017c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */
+/* background: url("https://images.unsplash.com/photo-1635204487816-e691eb017c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */

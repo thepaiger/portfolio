@@ -1,3 +1,5 @@
+/* Background image sourced from Unsplash user Georgie Cobbs: https://unsplash.com/photos/bKjHgo_Lbpo */
+
 .home {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,9 @@
   width: 100%;
   height: 100vh;
   min-height: 85vh;
-  /* background-image: url("../../assets/images/ilya-mirnyy-background.jpg"); */
+  background-image: url("../../assets/images/background-georgie-cobbs-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .intro-container {
@@ -15,6 +19,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
+  margin: 0 5vw 25vh 0;
 }
 
 .intro-text {
@@ -22,10 +27,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  width: 50%;
+  width: 80%;
   height: 100%;
   text-align: end;
-  margin: 0 50px 0 0;
+  color: #061f27;
 }
 
 .intro-heading {
@@ -35,31 +40,23 @@
   margin: 0 0 2.5vh 0;
   font-size: 64px;
   font-weight: 500;
-  /* color: #a4c2cc; */
-  /* color: #64ffda; */
-  /* color: #f9ed96; */
-  /* color: #dfb189; */
 }
 
 .intro-subheading {
   font-size: 30px;
   font-weight: 400;
-  /* color: #f7df1e; */
 }
 
-.intro-pic {
-  width: 330px;
-  height: 330px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
+@media (max-width: 739px) {
+  .intro-heading {
+    font-size: 50px;
+    font-weight: 500;
+  }
 
-.intro-pic > img {
-  display: inline;
-  margin: -8% 0 0 0;
-  height: auto;
-  width: 100%;
+  .intro-subheading {
+    font-size: 30px;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 480px) {
@@ -70,14 +67,6 @@
 
   .intro-container {
     flex-direction: column-reverse;
-  }
-
-  .intro-pic {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
   }
 
   .intro-text {
