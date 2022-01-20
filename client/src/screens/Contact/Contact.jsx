@@ -18,9 +18,9 @@ export default function Contact() {
         </p>
         <a className="contact-btn" href="mailto:paige.a.hoeppner@gmail.com">Contact Me</a>
       </div>
-      <footer>
+      {/* <footer>
         Designed & Built by Paige Hoeppner | 2021
-      </footer>
+      </footer> */}
     </section>
   );
 }

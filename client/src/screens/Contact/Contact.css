@@ -34,14 +34,12 @@
   transition: 0.3s ease-out all;
 }
 
-footer {
+/* footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0 0; */
   margin: 40px 0 0 0;
-  /* background-color: #0b3948; */
-}
+} */
 
 @media (max-width: 480px) {
   .contact-container {

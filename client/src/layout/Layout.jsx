@@ -1,4 +1,6 @@
+// ====================IMPORTS====================
 // Packages
+import { useState, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
 
 // CSS
@@ -10,71 +12,55 @@ import resumePdf from "../assets/resume/paige-hoeppner-resume.pdf";
 // Services
 import { logos } from "../services/logos";
 
-export default function Layout({ children }) {
+// ====================NAV & FOOTER TO WRAP MAIN CONTENT====================
 
+export default function Layout({ children }) {
+  // USESTATE, USEEFFECT, ONCLICK FUNC FOR SCROLL-TO-TOP BUTTON
+  const [showScrollBtn, setShowScrollBtn] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowScrollBtn(true);
+      } else {
+        setShowScrollBtn(false);
+      }
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="layout">
-      <nav className="nav-mobile">
-        {/* <div className="sidenav">
-          <a
-            href="javascript:void(0)"
-            class="closebtn"
-            onclick="closeNav()"
-          >
-            &times;
-          </a>
-          <NavHashLink
-            className="home-link"
-            smooth
-            to="#top"
-          >
-            Home
-          </NavHashLink>
-          <NavHashLink
-            className="nav-link"
-            smooth
-            to="#about"
-          >
-            About
-          </NavHashLink>
-          <NavHashLink
-            className="nav-link"
-            smooth
-            to="#projects"
-          >
-            Projects
-          </NavHashLink>
-          <NavHashLink
-            className="nav-link"
-            smooth
-            to="#contact"
-          >
-            Contact
-          </NavHashLink>
-        </div>
+      {/* ==========MOBILE NAVBAR========== */}
+      <nav className="nav-mobile"></nav>
 
-        <div onClick={() => ()}>{logos[2].svg}</div> */}
-      </nav>
+      {/* ==========DESKTOP NAVBAR========== */}
       <nav className="nav-desktop">
+        {/* HOME BUTTON */}
         <div className="border-corner">
           <NavHashLink
             className="home-link"
             smooth
             to="#top"
             activeClassName="selected"
-          // activeStyle={{ color: "red" }}
           >
             Home
           </NavHashLink>
         </div>
+
+        {/* NAVLINKS - ABOUT, PROJECTS, CONTACT, RESUME */}
         <div className="section-links">
           <NavHashLink
             className="nav-link"
             smooth
             to="#about"
             activeClassName="selected"
-          // activeStyle={{ color: "red" }}
           >
             About
           </NavHashLink>
@@ -83,7 +69,6 @@ export default function Layout({ children }) {
             smooth
             to="#projects"
             activeClassName="selected"
-          // activeStyle={{ color: "red" }}
           >
             Projects
           </NavHashLink>
@@ -92,7 +77,6 @@ export default function Layout({ children }) {
             smooth
             to="#contact"
             activeClassName="selected"
-          // activeStyle={{ color: "red" }}
           >
             Contact
           </NavHashLink>
@@ -100,6 +84,8 @@ export default function Layout({ children }) {
             <button className="resume-btn-nav">Resume</button>
           </a>
         </div>
+
+        {/* GITHUB & LINKEDIN LINKS */}
         <div className="logo-links">
           <a
             className="github-logo"
@@ -119,7 +105,35 @@ export default function Layout({ children }) {
           </a>
         </div>
       </nav>
+
+      {/* ==========MAIN CONTENT========== */}
       <main>{children}</main>
+
+      {/* ==========FOOTER========== */}
+      <footer>
+        Designed & Built by Paige Hoeppner | 2021
+        {/* SCROLL-TO-TOP BUTTON */}
+        {showScrollBtn && (
+          <button className="scroll-up-btn" onClick={scrollToTop}>
+            {/* &#8679; */}
+            {logos[3].svg}
+            {/* <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="back-to-top-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 11l5-5m0 0l5 5m-5-5v12"
+              />
+            </svg> */}
+          </button>
+        )}
+      </footer>
     </div>
   );
 }
