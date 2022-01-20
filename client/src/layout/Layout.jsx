@@ -10,9 +10,9 @@ import resumePdf from "../assets/resume/paige-hoeppner-resume.pdf";
 // Services
 import { logos } from "../services/logos";
 
+// ====================NAV & FOOTER TO WRAP MAIN CONTENT====================
+
 export default function Layout({ children }) {
-
-
   return (
     <div className="layout">
       {/* ==========MOBILE NAVBAR========== */}
