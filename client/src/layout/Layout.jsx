@@ -15,10 +15,14 @@ export default function Layout({ children }) {
 
   return (
     <div className="layout">
+      {/* ==========MOBILE NAVBAR========== */}
       <nav className="nav-mobile">
 
       </nav>
+
+      {/* ==========DESKTOP NAVBAR========== */}
       <nav className="nav-desktop">
+        {/* HOME BUTTON */}
         <div className="border-corner">
           <NavHashLink
             className="home-link"
@@ -29,6 +33,8 @@ export default function Layout({ children }) {
             Home
           </NavHashLink>
         </div>
+
+        {/* NAVLINKS - ABOUT, PROJECTS, CONTACT, RESUME */}
         <div className="section-links">
           <NavHashLink
             className="nav-link"
@@ -58,6 +64,8 @@ export default function Layout({ children }) {
             <button className="resume-btn-nav">Resume</button>
           </a>
         </div>
+
+        {/* GITHUB & LINKEDIN LINKS */}
         <div className="logo-links">
           <a
             className="github-logo"
@@ -77,9 +85,13 @@ export default function Layout({ children }) {
           </a>
         </div>
       </nav>
+
+      {/* ==========MAIN CONTENT========== */}
       <main>
         {children}
       </main>
+
+      {/* ==========FOOTER========== */}
       <footer>
         Designed & Built by Paige Hoeppner | 2021
       </footer>
