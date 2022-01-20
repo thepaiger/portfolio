@@ -1,5 +1,6 @@
 // ====================IMPORTS====================
 // Packages
+import { useState, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
 
 // CSS
@@ -14,12 +15,30 @@ import { logos } from "../services/logos";
 // ====================NAV & FOOTER TO WRAP MAIN CONTENT====================
 
 export default function Layout({ children }) {
+  // USESTATE, USEEFFECT, ONCLICK FUNC FOR SCROLL-TO-TOP BUTTON
+  const [showScrollBtn, setShowScrollBtn] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowScrollBtn(true);
+      } else {
+        setShowScrollBtn(false);
+      }
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="layout">
       {/* ==========MOBILE NAVBAR========== */}
-      <nav className="nav-mobile">
-
-      </nav>
+      <nav className="nav-mobile"></nav>
 
       {/* ==========DESKTOP NAVBAR========== */}
       <nav className="nav-desktop">
@@ -88,13 +107,32 @@ export default function Layout({ children }) {
       </nav>
 
       {/* ==========MAIN CONTENT========== */}
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
 
       {/* ==========FOOTER========== */}
       <footer>
         Designed & Built by Paige Hoeppner | 2021
+        {/* SCROLL-TO-TOP BUTTON */}
+        {showScrollBtn && (
+          <button className="scroll-up-btn" onClick={scrollToTop}>
+            {/* &#8679; */}
+            {logos[3].svg}
+            {/* <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="back-to-top-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 11l5-5m0 0l5 5m-5-5v12"
+              />
+            </svg> */}
+          </button>
+        )}
       </footer>
     </div>
   );
