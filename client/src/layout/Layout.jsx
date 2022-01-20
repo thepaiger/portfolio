@@ -16,45 +16,7 @@ export default function Layout({ children }) {
   return (
     <div className="layout">
       <nav className="nav-mobile">
-        {/* <div className="sidenav">
-          <a
-            href="javascript:void(0)"
-            class="closebtn"
-            onclick="closeNav()"
-          >
-            &times;
-          </a>
-          <NavHashLink
-            className="home-link"
-            smooth
-            to="#top"
-          >
-            Home
-          </NavHashLink>
-          <NavHashLink
-            className="nav-link"
-            smooth
-            to="#about"
-          >
-            About
-          </NavHashLink>
-          <NavHashLink
-            className="nav-link"
-            smooth
-            to="#projects"
-          >
-            Projects
-          </NavHashLink>
-          <NavHashLink
-            className="nav-link"
-            smooth
-            to="#contact"
-          >
-            Contact
-          </NavHashLink>
-        </div>
 
-        <div onClick={() => ()}>{logos[2].svg}</div> */}
       </nav>
       <nav className="nav-desktop">
         <div className="border-corner">
@@ -63,7 +25,6 @@ export default function Layout({ children }) {
             smooth
             to="#top"
             activeClassName="selected"
-          // activeStyle={{ color: "red" }}
           >
             Home
           </NavHashLink>
@@ -74,7 +35,6 @@ export default function Layout({ children }) {
             smooth
             to="#about"
             activeClassName="selected"
-          // activeStyle={{ color: "red" }}
           >
             About
           </NavHashLink>
@@ -83,7 +43,6 @@ export default function Layout({ children }) {
             smooth
             to="#projects"
             activeClassName="selected"
-          // activeStyle={{ color: "red" }}
           >
             Projects
           </NavHashLink>
@@ -92,7 +51,6 @@ export default function Layout({ children }) {
             smooth
             to="#contact"
             activeClassName="selected"
-          // activeStyle={{ color: "red" }}
           >
             Contact
           </NavHashLink>
@@ -119,7 +77,12 @@ export default function Layout({ children }) {
           </a>
         </div>
       </nav>
-      <main>{children}</main>
+      <main>
+        {children}
+      </main>
+      <footer>
+        Designed & Built by Paige Hoeppner | 2021
+      </footer>
     </div>
   );
 }
