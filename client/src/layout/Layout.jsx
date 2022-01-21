@@ -36,7 +36,6 @@ export default function Layout({ children }) {
       {/* ==========DESKTOP NAVBAR========== */}
       <nav className="nav-desktop">
         {/* HOME BUTTON */}
-        {/* <div className="border-corner"> */}
         <NavHashLink
           className="home-link"
           smooth
@@ -45,7 +44,6 @@ export default function Layout({ children }) {
         >
           {logos[4].svg}
         </NavHashLink>
-        {/* </div> */}
 
         {/* NAVLINKS - ABOUT, PROJECTS, CONTACT, RESUME */}
         <div className="section-links">
