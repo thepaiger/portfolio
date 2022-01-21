@@ -1,5 +1,11 @@
-/* Background image sourced from Unsplash user Georgie Cobbs: https://unsplash.com/photos/bKjHgo_Lbpo */
+/* 
+Background image sourced from Unsplash user Georgie Cobbs: 
+https://unsplash.com/photos/bKjHgo_Lbpo 
+*/
 
+/* ====================HOME STYLES==================== */
+
+/* OVERALL SECTION STYLES */
 .home {
   display: flex;
   flex-direction: column;
@@ -13,6 +19,7 @@
   background-size: cover;
 }
 
+/* SET CONTAINER FLEX, SIZE, MARGIN */
 .intro-container {
   display: flex;
   flex-direction: row;
@@ -34,6 +41,7 @@
   color: #061f27;
 }
 
+/* POSITION & SIZE MAIN HEADING */
 .intro-heading {
   display: flex;
   flex-direction: column;
@@ -43,6 +51,7 @@
   font-weight: 500;
 }
 
+/* POSITION & SIZE SUBHEADING */
 .intro-subheading {
   display: flex;
   flex-direction: column;
@@ -51,45 +60,38 @@
   font-weight: 400;
 }
 
+/* ====================MEDIA QUERIES==================== */
+
 @media (max-width: 739px) {
+  /* DECREASE CONTAINER WIDTH */
   .intro-text {
     width: 80%;
   }
 
+  /* SHRINK HEADING FONT SIZES */
   .intro-heading {
     font-size: 50px;
-    font-weight: 500;
   }
 
   .intro-subheading {
     font-size: 30px;
-    font-weight: 400;
   }
 }
 
 @media (max-width: 480px) {
-  .home {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .intro-text {
-    width: 80%;
-  }
-
+  /* SHRINK HEADING FONT SIZES, ADD VERTICAL MARGIN */
   .intro-heading {
     margin: 3vh 0;
     font-size: 30px;
-    font-weight: 500;
   }
 
   .intro-subheading {
     font-size: 18px;
-    font-weight: 400;
   }
 }
 
 @media (max-height: 825px) {
+  /* ADD TRANSPARENT BACKGROUND TO TEXT WHEN COVERING PLANT */
   .intro-text {
     background-color: #d8d7d154;
     padding: 0 20px;

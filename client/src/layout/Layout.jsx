@@ -105,7 +105,6 @@ export default function Layout({ children }) {
       {/* ==========FOOTER========== */}
       <footer>
         Designed & Built by Paige Hoeppner | 2021
-
         {/* Scroll-To-Top Button */}
         {showScrollBtn && (
           <NavHashLink
