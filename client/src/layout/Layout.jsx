@@ -36,16 +36,14 @@ export default function Layout({ children }) {
       {/* ==========DESKTOP NAVBAR========== */}
       <nav className="nav-desktop">
         {/* HOME BUTTON */}
-        <div className="border-corner">
-          <NavHashLink
-            className="home-link"
-            smooth
-            to="#top"
-            activeClassName="selected"
-          >
-            Home
-          </NavHashLink>
-        </div>
+        <NavHashLink
+          className="home-link"
+          smooth
+          to="#top"
+          activeClassName="selected"
+        >
+          {logos[4].svg}
+        </NavHashLink>
 
         {/* NAVLINKS - ABOUT, PROJECTS, CONTACT, RESUME */}
         <div className="section-links">
