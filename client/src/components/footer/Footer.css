@@ -1,4 +1,6 @@
-/* ==========FOOTER========== */
+/* ====================FOOTER STYLES==================== */
+
+/* SET DISPLAY, WIDTH, BOTTOM MARGIN */
 footer {
   display: flex;
   justify-content: center;
@@ -43,7 +45,6 @@ footer {
 /* ====================MEDIA QUERIES==================== */
 
 @media (max-width: 900px) {
-  /* ==========FOOTER========== */
   /* FULL WIDTH IF WIDTH < 900PX */
   footer {
     width: 100%;
@@ -57,6 +58,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+  /* TOP PADDING FOR MOBILE */
+  footer {
+    padding: 20px 0 0 0;
+  }
+
   /* SCROLL TO TOP BUTTON - REMOVE MARGIN FOR SIDENAV, MAKE COLOR MORE VISIBLE */
   .scroll-up-btn {
     right: 1.5rem;
