@@ -120,16 +120,16 @@ main {
 }
 
 /* ==========FOOTER========== */
-footer {
+/* footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0 40px 0;
   width: 87%;
-}
+} */
 
 /* SCROLL-TO-TOP BUTTON */
-.scroll-up-btn {
+/* .scroll-up-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,18 +148,18 @@ footer {
   box-shadow: 0 5px 10px #061f27;
   z-index: 100;
   transition: 0.3s ease-out all;
-}
+} */
 
 /* SCROLL-TO-TOP BUTTON HOVER */
-.scroll-up-btn:hover {
+/* .scroll-up-btn:hover {
   color: #f7df1e;
   border: solid 2px #f7df1e;
-}
+} */
 
-.scroll-up-btn svg {
+/* .scroll-up-btn svg {
   width: 40px;
   height: 40px;
-}
+} */
 
 /* ====================MEDIA QUERIES==================== */
 
@@ -178,16 +178,17 @@ footer {
 
   /* ==========MAIN & FOOTER========== */
   /* FULL WIDTH IF WIDTH < 900PX */
-  main,
-  footer {
+  /* main,
+  footer { */
+  main {
     width: 100%;
   }
 
   /* SCROLL TO TOP BUTTON - REMOVE MARGIN FOR SIDENAV, MAKE COLOR MORE VISIBLE */
-  .scroll-up-btn {
+  /* .scroll-up-btn {
     margin: 0 0 0 0;
     background-color: #061f27;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
@@ -198,16 +199,16 @@ footer {
   }
 
   /* SCROLL TO TOP BUTTON - REMOVE MARGIN FOR SIDENAV, MAKE COLOR MORE VISIBLE */
-  .scroll-up-btn {
+  /* .scroll-up-btn {
     right: 1.5rem;
     bottom: 3.5rem;
     height: 40px;
     width: 40px;
-  }
+  } */
 
   /* SHRINK SVG PROPORTIONALLY */
-  .scroll-up-btn svg {
+  /* .scroll-up-btn svg {
     width: 30px;
     height: 30px;
-  }
+  } */
 }

@@ -1,32 +1,35 @@
 // ====================IMPORTS====================
 // Packages
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
+
+// Components
+import Footer from "../footer/Footer"
 
 // CSS
 import "./Layout.css";
 
 // Assets
-import resumePdf from "../assets/resume/paige-hoeppner-resume.pdf";
+import resumePdf from "../../assets/resume/paige-hoeppner-resume.pdf";
 
 // Services
-import { logos } from "../services/logos";
+import { logos } from "../../services/logos";
 
 // ====================NAV & FOOTER TO WRAP MAIN CONTENT====================
 
 export default function Layout({ children }) {
   // USESTATE, USEEFFECT FOR SCROLL-TO-TOP BUTTON
-  const [showScrollBtn, setShowScrollBtn] = useState(false);
+  // const [showScrollBtn, setShowScrollBtn] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        setShowScrollBtn(true);
-      } else {
-        setShowScrollBtn(false);
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     if (window.pageYOffset > 300) {
+  //       setShowScrollBtn(true);
+  //     } else {
+  //       setShowScrollBtn(false);
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div className="layout">
@@ -101,10 +104,13 @@ export default function Layout({ children }) {
       <main>{children}</main>
 
       {/* ==========FOOTER========== */}
-      <footer>
-        Designed & Built by Paige Hoeppner | 2021
-        {/* Scroll-To-Top Button */}
-        {showScrollBtn && (
+      <Footer />
+
+
+      {/* <footer>
+        Designed & Built by Paige Hoeppner | 2021 */}
+      {/* Scroll-To-Top Button */}
+      {/* {showScrollBtn && (
           <NavHashLink
             className="scroll-up-btn"
             smooth
@@ -114,7 +120,7 @@ export default function Layout({ children }) {
             {logos[3].svg}
           </NavHashLink>
         )}
-      </footer>
+      </footer> */}
     </div>
   );
 }

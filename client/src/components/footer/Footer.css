@@ -1,0 +1,73 @@
+/* ==========FOOTER========== */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 40px 0;
+  width: 87%;
+}
+
+/* SCROLL-TO-TOP BUTTON */
+.scroll-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2.5rem;
+  bottom: 2.5rem;
+  height: 50px;
+  width: 50px;
+  margin: 0 13% 0 0;
+  background-color: #061f27;
+  color: #d0cdd7;
+  font-size: 30px;
+  text-align: center;
+  border: solid 2px #d0cdd7;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px #061f27;
+  z-index: 100;
+  transition: 0.3s ease-out all;
+}
+
+/* SCROLL-TO-TOP BUTTON HOVER */
+.scroll-up-btn:hover {
+  color: #f7df1e;
+  border: solid 2px #f7df1e;
+}
+
+.scroll-up-btn svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* ====================MEDIA QUERIES==================== */
+
+@media (max-width: 900px) {
+  /* ==========FOOTER========== */
+  /* FULL WIDTH IF WIDTH < 900PX */
+  footer {
+    width: 100%;
+  }
+
+  /* SCROLL TO TOP BUTTON - REMOVE MARGIN FOR SIDENAV, MAKE COLOR MORE VISIBLE */
+  .scroll-up-btn {
+    margin: 0 0 0 0;
+    background-color: #061f27;
+  }
+}
+
+@media (max-width: 480px) {
+  /* SCROLL TO TOP BUTTON - REMOVE MARGIN FOR SIDENAV, MAKE COLOR MORE VISIBLE */
+  .scroll-up-btn {
+    right: 1.5rem;
+    bottom: 3.5rem;
+    height: 40px;
+    width: 40px;
+  }
+
+  /* SHRINK SVG PROPORTIONALLY */
+  .scroll-up-btn svg {
+    width: 30px;
+    height: 30px;
+  }
+}
