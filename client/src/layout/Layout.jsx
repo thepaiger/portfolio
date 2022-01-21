@@ -15,7 +15,7 @@ import { logos } from "../services/logos";
 // ====================NAV & FOOTER TO WRAP MAIN CONTENT====================
 
 export default function Layout({ children }) {
-  // USESTATE, USEEFFECT, ONCLICK FUNC FOR SCROLL-TO-TOP BUTTON
+  // USESTATE, USEEFFECT FOR SCROLL-TO-TOP BUTTON
   const [showScrollBtn, setShowScrollBtn] = useState(false);
 
   useEffect(() => {
@@ -27,13 +27,6 @@ export default function Layout({ children }) {
       }
     });
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div className="layout">
@@ -112,26 +105,17 @@ export default function Layout({ children }) {
       {/* ==========FOOTER========== */}
       <footer>
         Designed & Built by Paige Hoeppner | 2021
-        {/* SCROLL-TO-TOP BUTTON */}
+
+        {/* Scroll-To-Top Button */}
         {showScrollBtn && (
-          <button className="scroll-up-btn" onClick={scrollToTop}>
-            {/* &#8679; */}
+          <NavHashLink
+            className="scroll-up-btn"
+            smooth
+            to="#top"
+            activeClassName="selected"
+          >
             {logos[3].svg}
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="back-to-top-icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M7 11l5-5m0 0l5 5m-5-5v12"
-              />
-            </svg> */}
-          </button>
+          </NavHashLink>
         )}
       </footer>
     </div>
