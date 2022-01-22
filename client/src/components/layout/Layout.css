@@ -1,107 +1,5 @@
 /* ====================LAYOUT STYLES==================== */
 
-/* ==========DESKTOP NAVBAR========== */
-/* .nav-desktop {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  right: 0;
-  width: 13%;
-  height: 100%;
-  position: fixed;
-  background-color: #061f27;
-} */
-
-/* HOME BUTTON */
-/* .home-link {
-  position: relative;
-  display: block;
-  margin: 5vh 0 0 0;
-  padding: 0;
-  font-size: 24px;
-  z-index: 5;
-  transition: 0.3s ease-out all;
-} */
-
-/* HOME BUTTON/CORNERS YELLOW HOVER */
-/* .home-link:hover {
-  color: #f7df1e;
-} */
-
-/* HOVER TRANSITION ON LOGOS */
-/* .home-link svg {
-  fill: #d0cdd7;
-  width: 100%;
-  height: 100%;
-} */
-
-/* NAVLINKS CONTAINER - ABOUT, PROJECTS, CONTACT, RESUME BUTTON */
-/* .section-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  position: fixed;
-} */
-
-/* NAVLINKS - ABOUT, PROJECTS, CONTACT */
-/* .nav-link {
-  margin: 0 0 6vh 0;
-  font-size: 24px;
-  z-index: 1;
-  transition: 0.3s ease-out all;
-} */
-
-/* NAVLINK HOVERS - ABOUT, PROJECTS, CONTACT */
-/* .nav-link:hover {
-  color: #f7df1e;
-} */
-
-/* GITHUB & LINKEDIN LOGO BUTTONS */
-/* .logo-links {
-  width: 100%;
-  margin: 0 0 5vh 0;
-  z-index: 2;
-} */
-
-/* MARGIN BETWEEN GITHUB & LINKEDIN LOGOS */
-/* .github-logo {
-  margin: 0 2vw 0 0;
-} */
-
-/* HOVER TRANSITION ON LOGOS */
-/* .github-logo svg,
-.linkedin-logo svg {
-  transition: 0.3s ease-out all;
-} */
-
-/* LOGO HOVERS */
-/* .github-logo svg:hover,
-.linkedin-logo svg:hover {
-  fill: #f7df1e;
-} */
-
-/* NAVBAR RESUME BUTTON */
-/* .resume-btn-nav {
-  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", sans-serif;
-  font-size: 20px;
-  background-color: #061f27;
-  color: #d0cdd7;
-  border: solid 2px #d0cdd7;
-  margin: 0;
-  padding: 5px 15px;
-  transition: 0.3s ease-out all;
-} */
-
-/* NAVBAR RESUME BUTTON HOVER */
-/* .resume-btn-nav:hover {
-  color: #f7df1e;
-  border: solid 2px #f7df1e;
-} */
-
 /* ==========MOBILE NAVBAR========== */
 /* HIDE IF WIDTH > 900PX */
 .nav-mobile {
@@ -117,12 +15,6 @@ main {
 /* ====================MEDIA QUERIES==================== */
 
 @media (max-width: 900px) {
-  /* ==========DESKTOP NAVBAR========== */
-  /* HIDE IF WIDTH < 900PX */
-  /* .nav-desktop {
-    display: none;
-  } */
-
   /* ==========MOBILE NAVBAR========== */
   /* SHOW IF WIDTH < 900PX */
   .nav-mobile {
