@@ -1,11 +1,5 @@
 /* ====================LAYOUT STYLES==================== */
 
-/* ==========MOBILE NAVBAR========== */
-/* HIDE IF WIDTH > 900PX */
-.nav-mobile {
-  display: none;
-}
-
 /* ==========MAIN========== */
 main {
   width: 87%;
@@ -15,12 +9,6 @@ main {
 /* ====================MEDIA QUERIES==================== */
 
 @media (max-width: 900px) {
-  /* ==========MOBILE NAVBAR========== */
-  /* SHOW IF WIDTH < 900PX */
-  .nav-mobile {
-    display: block;
-  }
-
   /* ==========MAIN========== */
   /* FULL WIDTH IF WIDTH < 900PX */
   main {
