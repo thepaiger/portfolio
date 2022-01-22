@@ -3,7 +3,7 @@
 import { NavHashLink } from "react-router-hash-link";
 
 // Components
-import Footer from "../footer/Footer"
+import Footer from "../Footer/Footer"
 
 // CSS
 import "./Layout.css";
@@ -13,6 +13,7 @@ import resumePdf from "../../assets/resume/paige-hoeppner-resume.pdf";
 
 // Services
 import { logos } from "../../services/logos";
+import NavDesktop from "../NavDesktop/NavDesktop";
 
 // ====================NAV & FOOTER TO WRAP MAIN CONTENT====================
 
@@ -23,19 +24,20 @@ export default function Layout({ children }) {
       <nav className="nav-mobile"></nav>
 
       {/* ==========DESKTOP NAVBAR========== */}
-      <nav className="nav-desktop">
-        {/* HOME BUTTON */}
-        <NavHashLink
+      <NavDesktop />
+      {/* <nav className="nav-desktop"> */}
+      {/* HOME BUTTON */}
+      {/* <NavHashLink
           className="home-link"
           smooth
           to="#top"
           activeClassName="selected"
         >
           {logos[4].svg}
-        </NavHashLink>
+        </NavHashLink> */}
 
-        {/* NAVLINKS - ABOUT, PROJECTS, CONTACT, RESUME */}
-        <div className="section-links">
+      {/* NAVLINKS - ABOUT, PROJECTS, CONTACT, RESUME */}
+      {/* <div className="section-links">
           <NavHashLink
             className="nav-link"
             smooth
@@ -63,10 +65,10 @@ export default function Layout({ children }) {
           <a href={resumePdf} target="_blank" rel="noopener noreferrer">
             <button className="resume-btn-nav">Resume</button>
           </a>
-        </div>
+        </div> */}
 
-        {/* GITHUB & LINKEDIN LINKS */}
-        <div className="logo-links">
+      {/* GITHUB & LINKEDIN LINKS */}
+      {/* <div className="logo-links">
           <a
             className="github-logo"
             href="https://github.com/thepaiger"
@@ -84,7 +86,7 @@ export default function Layout({ children }) {
             {logos[1].svg}
           </a>
         </div>
-      </nav>
+      </nav> */}
 
       {/* ==========MAIN CONTENT========== */}
       <main>{children}</main>
