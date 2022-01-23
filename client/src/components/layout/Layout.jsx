@@ -1,6 +1,6 @@
 // ====================IMPORTS====================
+// Packages
 import { useState, useRef } from "react";
-
 
 // Components
 import Burger from "../Burger/Burger";
@@ -16,10 +16,8 @@ import { useOnClickOutside } from "../../services/hooks"
 // ====================NAV & FOOTER TO WRAP MAIN CONTENT====================
 
 export default function Layout({ children }) {
-
   const node = useRef();
   const [open, setOpen] = useState(false);
-
 
   useOnClickOutside(node, () => setOpen(false));
 
