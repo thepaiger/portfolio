@@ -1,5 +1,3 @@
-// Packages
-
 // Screens/Layout
 import Layout from './components/Layout/Layout.jsx';
 import About from './screens/About/About.jsx';
@@ -14,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Home id="home" />
+        <Home />
         <About />
         <Projects />
         <Contact />
