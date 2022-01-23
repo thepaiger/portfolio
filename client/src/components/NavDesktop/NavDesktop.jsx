@@ -11,8 +11,8 @@ import resumePdf from "../../assets/resume/paige-hoeppner-resume.pdf";
 // Services
 import { logos } from "../../services/logos";
 
-export default function NavDesktop() {
-  return <nav className="nav-desktop">
+export default function NavDesktop({ open }) {
+  return <nav className={open ? "nav-desktop open" : "nav-desktop"} open={open}>
     {/* HOME BUTTON */}
     <NavHashLink
       className="home-link"

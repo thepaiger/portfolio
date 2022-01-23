@@ -1,0 +1,21 @@
+.burger-icon {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 300;
+}
+
+/* BURGER HOVERS */
+.burger-icon svg:hover {
+  stroke: #061f27;
+  cursor: pointer;
+}
+
+/* ====================MEDIA QUERIES==================== */
+
+@media (min-width: 901px) {
+  /* DO NOT DISPLAY ON LARGER SCREENS */
+  .burger-icon {
+    display: none;
+  }
+}

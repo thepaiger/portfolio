@@ -108,5 +108,11 @@
   /* HIDE IF WIDTH < 900PX */
   .nav-desktop {
     display: none;
+    transform: translateX(100%);
+  }
+
+  .open {
+    display: flex;
+    transform: translateX(0);
   }
 }
