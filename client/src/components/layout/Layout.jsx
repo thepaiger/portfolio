@@ -1,7 +1,7 @@
 // ====================IMPORTS====================
 // Components
-import Footer from "../Footer/Footer"
-import NavDesktop from "../NavDesktop/NavDesktop";
+import Footer from "../Footer/Footer.jsx"
+import NavDesktop from "../NavDesktop/NavDesktop.jsx";
 
 // CSS
 import "./Layout.css";

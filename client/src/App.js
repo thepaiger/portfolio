@@ -1,11 +1,11 @@
 // Packages
 
 // Screens/Layout
-import Layout from './components/Layout/Layout';
-import About from './screens/About/About';
-import Contact from './screens/Contact/Contact';
-import Home from './screens/Home/Home';
-import Projects from './screens/Projects/Projects';
+import Layout from './components/Layout/Layout.jsx';
+import About from './screens/About/About.jsx';
+import Contact from './screens/Contact/Contact.jsx';
+import Home from './screens/Home/Home.jsx';
+import Projects from './screens/Projects/Projects.jsx';
 
 // CSS
 import './App.css';
