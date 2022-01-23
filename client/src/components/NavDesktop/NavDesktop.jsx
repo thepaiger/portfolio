@@ -1,6 +1,7 @@
 // ====================IMPORTS====================
 // Packages
 import { NavHashLink } from "react-router-hash-link";
+
 // CSS
 import "./NavDesktop.css";
 

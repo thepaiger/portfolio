@@ -2,7 +2,7 @@
 // Components
 import Footer from "../Footer/Footer"
 import NavDesktop from "../NavDesktop/NavDesktop";
-import NavHamburger from "../NavHamburger/NavHamburger";
+// import NavHamburger from "../NavHamburger/NavHamburger";
 
 // CSS
 import "./Layout.css";
@@ -12,7 +12,7 @@ import "./Layout.css";
 export default function Layout({ children }) {
   return (
     <div className="layout">
-      <NavHamburger />
+      {/* <NavHamburger /> */}
       <NavDesktop />
       <main>{children}</main>
       <Footer />
