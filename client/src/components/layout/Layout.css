@@ -1,0 +1,25 @@
+/* ====================LAYOUT STYLES==================== */
+
+/* ==========MAIN========== */
+main {
+  width: 87%;
+  box-sizing: border-box;
+}
+
+/* ====================MEDIA QUERIES==================== */
+
+@media (max-width: 900px) {
+  /* ==========MAIN========== */
+  /* FULL WIDTH IF WIDTH < 900PX */
+  main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ==========MAIN========== */
+  /* REMOVE PADDING IF WIDTH < 480PX */
+  main {
+    padding: 0;
+  }
+}
