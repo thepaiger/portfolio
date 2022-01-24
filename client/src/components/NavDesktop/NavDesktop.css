@@ -107,6 +107,13 @@
 
 /* ====================MEDIA QUERIES==================== */
 
+@media (max-width: 1250px) {
+  /* WIDEN NAV */
+  .nav-desktop {
+    width: 20%;
+  }
+}
+
 @media (max-width: 900px) {
   /* HIDE IF WIDTH < 900PX */
   .nav-desktop {
