@@ -27,7 +27,7 @@ footer {
   border: solid 2px #d0cdd7;
   border-radius: 50%;
   box-shadow: 0 5px 10px #061f27;
-  z-index: 100;
+  z-index: 5;
   transition: 0.3s ease-out all;
 }
 
